@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Centering the app */
+.app {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Task Input */
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #218838;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Task Item */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.task:hover {
+  background: #f0f0f0;
+}
+
+/* Task Completed */
+.task.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+button {
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.task button {
+  background: #ff4d4d;
+  color: white;
+}
+
+.task button:hover {
+  background: #d63030;
+}
+
+.task .edit-btn {
+  background: #007bff;
+}
+
+.task .edit-btn:hover {
+  background: #0056b3;
+}
+
+.task .complete-btn {
+  background: #ffc107;
+}
+
+.task .complete-btn:hover {
+  background: #e0a800;
+}
